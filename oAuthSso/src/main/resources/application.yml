@@ -1,0 +1,18 @@
+---
+# application.yml
+spring:
+  oauth2:
+    client:
+      clientId: client
+      clientSecret: secret
+      userAuthorizationUri: http://localhost:8080/demo/oauth/authorize
+      accessTokenUri: http://localhost:8080/demo/oauth/token
+    resource:
+      tokenInfoUri: http://localhost:8080/demo/oauth/check_token 
+
+spring.view.prefix: /WEB-INF/views/
+spring.view.suffix: .jsp
+
+# For some reason, we need to turn basic security off,
+# otherwise we will be prompted for credentials unprotected resources.
+security.basic.enabled: false     
