@@ -10,9 +10,6 @@ spring:
     resource:
       tokenInfoUri: http://localhost:8080/oauthServer/oauth/check_token 
 
-spring.view.prefix: /WEB-INF/views/
-spring.view.suffix: .jsp
-
 # For some reason, we need to turn basic security off,
 # otherwise we will be prompted for credentials unprotected resources.
 security.basic.enabled: false     

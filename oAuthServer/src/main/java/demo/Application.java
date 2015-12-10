@@ -29,7 +29,7 @@ public class Application {
 				.secret("secret")
 				.authorizedGrantTypes("password","authorization_code","refresh_token")
 				.scopes("seeTheMessage","doSomethingElse")
-				.accessTokenValiditySeconds(30)
+//				.accessTokenValiditySeconds(30)
 				;
 		}
 
